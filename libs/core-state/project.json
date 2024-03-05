@@ -1,0 +1,19 @@
+{
+  "name": "core-state",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core-state/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/core-state",
+        "main": "libs/core-state/src/index.ts",
+        "tsConfig": "libs/core-state/tsconfig.lib.json",
+        "assets": ["libs/core-state/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
